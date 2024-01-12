@@ -94,7 +94,8 @@ function countryFinder(listOfUsers, searchWord) {
     // Vi tittar på nyckeln 'nat' och sorterar ut alla objekt vars 'nat' värde är detsamma som vår parameter searchWord (vilket är samma värde som variabeln nationality)
     let filteredUsers = listOfUsers.filter(user => user.nat === searchWord)
     // när man nu loggar ut 'filteredUsers' får vi objekten som svar. Men vi ser inte in i objekten. 
-    console.log(`${filteredUsers} `)
+    console.log(`Så här ser det ut om man inte gör en forEach: ${filteredUsers} `)
+    console.log("----------------------")
 
     // för att se vad objekten innehåller kan man göra en forEach loop som tittar på varje objekt vi får tillbaka och loggar ut de nycklar vi definierar.
     filteredUsers.forEach(object => {
@@ -110,6 +111,7 @@ console.log(`Uppgift 4: filterByGender`)
 // innehållande endast kvinnliga eller manliga användare.
 
 let genderSearch = `Mademoiselle`;
+
 genderApartheid(users, genderSearch);
 
 function genderApartheid(listOfGenders, genderedTitle) {
